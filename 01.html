@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <p></p>
+    <h1>
+      こちらに攻撃してください　私は喜びます　ログを収集します　ご了承ください
+    </h1>
+    <ul>
+      <li>今日は何が起こるのか。。</li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <input type="text" name="name" id="inputed_text" value="" />
+    <input type="button" name="name" id="btnRegist" value="投稿" />
+    <script type="text/javascript">
+      $(function() {
+        $("#btnRegist").on("click", function() {
+          var inputed_text = $("#inputed_text").val();
+          $("ul").append("<li>" + inputed_text + "</li>");
+        });
+      });
+    </script>
+  </body>
+</html>
